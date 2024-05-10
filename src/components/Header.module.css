@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 16px;
+  color: white;
+}
+
+.navheader{
+  display: flex;
+  width: 430px;
+  justify-content: space-between;
+}
+
+.logoheader img {
+  width: 83.57px;
+  height: 40px;
+}
+
+.bellheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  height: 36px;
+}
+
+.bellheader p {
+  color: #333333;
+  font-size: 2rem;
+}
+
+.selected {
+  color: #FBA403;
+}

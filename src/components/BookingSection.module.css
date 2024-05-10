@@ -1,0 +1,104 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  padding: 74px 89px;
+  color: white;
+}
+
+.boxForm {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.h1{
+  font-size: 50px;
+}
+
+.h2{
+  font-size: 26px;
+}
+
+.span {
+  color: #FBA403;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #2C2C2C;
+  padding: 30px 33px;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.form p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 610px;
+}
+
+.heroImage img {
+  width: 610px;
+  height: 593px;
+  border-radius: 10px;
+}
+
+label.text {
+  font-size: 12px;
+  color: #FFF;
+  opacity: 70%;
+  position: relative;
+  top: 0.5rem;
+  line-height: 12px;
+  margin: 0 0 0 7px;
+  padding: 0 3px;
+  background: #2C2C2C;
+  width: fit-content;
+  letter-spacing: 0.15px;
+}
+
+input[type=text].input {
+  color: #FFF;
+  padding: 17px 12px;
+  font-size: 16px;
+  border: 2px #FFF solid;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.input::placeholder {
+  color: #FFF;
+}
+
+.find {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.find button {
+  padding: 16px;
+  margin-top: 16px;
+  background-color: #FBA403;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  letter-spacing: 1.25px;
+}
+
+.find p {
+  color: #FBA403;
+  font-size: 14px;
+}
+
+.myRIDE {
+  color: #FBA403;
+}
