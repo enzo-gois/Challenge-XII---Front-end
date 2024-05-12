@@ -1,0 +1,183 @@
+.section {
+  background-color: #2C2C2C;
+  margin: 85px 58px;
+  border-radius: 10px;
+  font-family: Roboto;
+}
+
+.firstContainer {
+  display: flex;
+  align-items: center;
+}
+
+.firstContainer img {
+  margin: 30px 18px 24px 30px;
+}
+
+.textP {
+  color: #FBA403;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.textSpan {
+  color: #FFF;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formDiv {
+  display: flex;
+  margin: 0px 30px;
+}
+
+.formDiv1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+.labelCountry {
+  font-size: 12px;
+  color: #FFF;
+  position: relative;
+  top: 0.5rem;
+  line-height: 16px;
+  margin: 0 0 0 7px;
+  padding: 0 3px;
+  background: #2C2C2C;
+  width: fit-content;
+  height: fit-content;
+  letter-spacing: 0.15px;
+}
+
+.inputFNome {
+  margin-right: 10px;
+}
+
+.inputLNome {
+  margin-left: 10px;
+}
+
+.input,
+.inputCountry,
+.inputFNome,
+.inputLNome {
+  height: 57px;
+  width: auto;
+  margin-bottom: 24px;
+  padding: 16.5px;
+  background: transparent;
+  border:  1px solid #FFF;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.input::placeholder,
+.inputFNome::placeholder,
+.inputLNome::placeholder,
+.inputCountry::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  font-family: Roboto;
+  color: #666666;
+  opacity: 87%;
+}
+
+.checkBox {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.label {
+  color: #FFF;
+  line-height: 26px;
+}
+
+.container{
+  width: 55px;
+  height: 20px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button{
+  background-color: #d2d2d2;
+  width: 35px;
+  height: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+
+.button::before{
+  position: absolute;
+  content: '';
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: -2px;
+  transition: 0.2s;
+}
+input:checked + .button{
+  background-color: #fab433;
+}
+
+input:checked + .button::before{
+  background-color: #e0970f;
+  transform: translateX(18px);
+}
+
+.container input {
+  display: none;
+}
+
+.carType {
+  color: #FBA403;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 24px 0px 16px 0px;
+}
+
+.SelectCarTypes {
+  display: flex;
+}
+
+.SelectCarTypes button{
+  height: 80px;
+  width: 146.5px;
+  font-family: Roboto;
+  background: transparent;
+  border: 1px solid #FFF;
+  border-radius: 4px;
+  margin-right: 12px;
+  color: #FFF;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 24px 0px 24.75px 0px;
+  background-color: #FBA403;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  letter-spacing: 1.25px;
+  cursor: pointer;
+  width: 200px;
+  font-size: 14px;
+}

@@ -37,6 +37,11 @@
   list-style: none;
 }
 
+.moreLinks li {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
 .moreLinks p {
   padding-bottom: 20px;
   font-size: 20px;

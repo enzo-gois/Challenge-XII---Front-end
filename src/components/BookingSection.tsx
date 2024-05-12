@@ -9,16 +9,16 @@ const BookingSection = () => {
       </div>
       <section className={styles.formSection}>
         <h2 className={styles.h2}>NEED A RIDE?</h2>
-        <h1 className={styles.h1}>Book with <span className={styles.span}><i>my</i>RIDE</span> now!</h1>
+        <h1 className={styles.h1}>Book with <span className={styles.span}><i style={{fontWeight: 'regular'}}>my</i>RIDE</span> now!</h1>
         <div className={styles.formBox}>
           <form className={styles.form}>
             <p>Find a ride now</p>
-            <label className={styles.text} htmlFor="currentLocation">Your Pickup: </label>
+            <label className={styles.text} htmlFor="currentLocation"> <span>Your Pickup:</span> </label>
             <input className={styles.input} type="text" placeholder="Current location" name="currentLocation" />
-            <label className={styles.text} htmlFor="yourDestination">Your Destination: </label>
+            <label className={styles.text} htmlFor="yourDestination"> <span>Your Destination:</span></label>
             <input className={styles.input} type="text" placeholder="Your Destination" name="yourDestination" />
             <div className={styles.find}>
-              <button> FIND A DRIVER</button>
+              <button> <img src="https://challengexiienzogois.s3.us-east-2.amazonaws.com/icon.svg" alt="" />FIND A DRIVER</button>
               <p>MORE OPTIONS</p>
             </div>
           </form>
