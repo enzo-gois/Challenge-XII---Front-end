@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #282828;
+  color: #FFF;
+  font-size: 1.5rem;
+  padding: 250px;
+}
+
+.homeLink {
+  color: #FBA403;
+}

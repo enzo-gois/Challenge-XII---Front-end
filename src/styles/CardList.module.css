@@ -1,0 +1,25 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1 {
+  color: #FBA403;
+  font-size: 26px;
+  letter-spacing: -0.25px;
+  font-weight: normal;
+}
+
+.h2 {
+  color: #FFF;
+  font-size: 45px;
+  line-height: 52px;
+  letter-spacing: -0.25px;
+  padding-bottom: 60px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row-reverse;
+}
