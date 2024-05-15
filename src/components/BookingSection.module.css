@@ -34,7 +34,7 @@
   margin-top: 30px;
 }
 
-.form p {
+.formP {
   font-size: 24px;
   font-weight: bold;
   letter-spacing: -0.25px;
@@ -131,4 +131,20 @@
 
 .myRIDE {
   color: #FBA403;
+}
+
+
+.containerError {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.error {
+  color: #E32200;
+  padding-left: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15px;
 }

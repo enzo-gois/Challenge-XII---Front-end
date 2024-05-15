@@ -18,27 +18,27 @@ const Footer = () => {
         <div className={styles.moreLinks}>
           <p>Company</p>
           <ul>
-            <li>About Us</li>
-            <li>News</li>
-            <li>Careers</li>
-            <li>How we work</li>
+            <li> <a href="/not-found">About Us</a> </li> 
+            <li> <a href="/not-found">News</a> </li>
+            <li> <a href="/not-found">Careers</a> </li>
+            <li> <a href="/not-found">How we work</a> </li>
           </ul>
         </div>
         <div className={styles.moreLinks}>
           <p>Support</p>
           <ul>
-            <li>FAQ</li>
-            <li>US Ofiice</li>
-            <li>Asia Office</li>
-            <li>Help Center</li>
+            <li> <a href="/not-found">FAQ</a> </li>
+            <li> <a href="/not-found">US Ofiice</a> </li>
+            <li> <a href="/not-found">Asia Office</a> </li>
+            <li> <a href="/not-found">Help Center</a> </li>
           </ul>
         </div>
         <div className={styles.moreLinks}>
           <p>More</p>
           <ul>
-            <li>Become a partner</li>
-            <li>Partner Support</li>
-            <li>Mobile app links</li>
+            <li> <a href="/not-found">Become a partner</a> </li>
+            <li> <a href="/not-found">Partner Support</a> </li>
+            <li> <a href="/not-found">Mobile app links</a> </li>
           </ul>
         </div>
       </div>
