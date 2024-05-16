@@ -10,7 +10,7 @@ const CardList = () => {
   const [cards, setCards] = useState<Card[]>([])
 
   useEffect(() => {
-    axios.get('http://localhost:3000/cards')
+    axios.get('http://localhost:3001/cards')
       .then(response => {
         setCards(response.data)
       })

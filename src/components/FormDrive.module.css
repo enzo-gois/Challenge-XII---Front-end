@@ -69,6 +69,7 @@
 .inputCountry,
 .inputFNome,
 .inputLNome {
+  color: #FFF;
   height: 57px;
   width: auto;
   margin-bottom: 24px;
@@ -77,6 +78,7 @@
   border:  1px solid #FFF;
   border-radius: 4px;
   width: 100%;
+  font-size: 16px;
 }
 
 .input::placeholder,
@@ -180,4 +182,21 @@ input:checked + .button::before{
   cursor: pointer;
   width: 200px;
   font-size: 14px;
+}
+
+.select {
+  color: #666666;
+  font-size: 16px;
+  line-height: 24px;
+  height: 57px;
+  width: auto;
+  margin-bottom: 24px;
+  padding: 16.5px;
+  background: transparent var(--arrow-icon) no-repeat right 0.8em center / 1.4em ;
+  border:  1px solid #FFF;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
