@@ -2,10 +2,10 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Card from '../interfaces/Card'
-import styles from '../styles/CardList.module.css'
+import styles from '../styles/CardListSection.module.css'
 import CardItem from '@/components/CardItem'
 
-const CardList = () => {
+const CardListSection = () => {
 
   const [cards, setCards] = useState<Card[]>([])
 
@@ -30,4 +30,4 @@ const CardList = () => {
   )
 }
 
-export default CardList
+export default CardListSection

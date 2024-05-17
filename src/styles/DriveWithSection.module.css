@@ -1,0 +1,28 @@
+.section {
+  background-color: #2C2C2C;
+  margin: 85px 58px;
+  border-radius: 10px;
+  font-family: Roboto;
+}
+
+.firstContainer {
+  display: flex;
+  align-items: center;
+}
+
+.firstContainer img {
+  margin: 30px 18px 24px 30px;
+}
+
+.textP {
+  color: #FBA403;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.textSpan {
+  color: #FFF;
+  font-size: 16px;
+  line-height: 26px;
+}

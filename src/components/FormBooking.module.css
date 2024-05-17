@@ -1,30 +1,3 @@
-.section {
-  display: flex;
-  justify-content: space-between;
-  padding: 74px 89px;
-  color: white;
-}
-
-.boxForm {
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.h1{
-  font-size: 50px;
-}
-
-.h2{
-  font-size: 26px;
-  font-weight: 400;
-  letter-spacing: -0.25px;
-}
-
-.span {
-  color: #FBA403;
-}
-
 .form {
   display: flex;
   flex-direction: column;
@@ -38,19 +11,6 @@
   font-size: 24px;
   font-weight: bold;
   letter-spacing: -0.25px;
-}
-
-.formSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 610px;
-}
-
-.heroImage img {
-  width: 610px;
-  height: 593px;
-  border-radius: 10px;
 }
 
 .text {
@@ -67,10 +27,6 @@
   letter-spacing: 0.15px;
 }
 
-.text span {
-  opacity: 70%;
-}
-
 .input {
   color: #FFF;
   padding: 17px 12px;
@@ -80,6 +36,10 @@
   border: 1px #AEAEAE solid;
   border-radius: 4px;
   background: url("https://challengexiienzogois.s3.us-east-2.amazonaws.com/Icon+Button.svg") no-repeat right / 3em 2em;
+}
+
+.text span {
+  opacity: 70%;
 }
 
 .input::placeholder {
@@ -95,11 +55,6 @@
 .input:focus::placeholder {
   color: #FBA403;
   border-color: #FBA403;
-}
-
-.icon {
-  width: 32px;
-  height: 32px;
 }
 
 .find {
@@ -131,20 +86,4 @@
 
 .myRIDE {
   color: #FBA403;
-}
-
-
-.containerError {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.error {
-  color: #E32200;
-  padding-left: 6px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.15px;
 }
