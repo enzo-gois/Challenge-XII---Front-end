@@ -4,11 +4,27 @@
   align-items: center;
 }
 
+.containerError img {
+  width: 16px;
+  height: 16px;
+}
+
 .error {
-  color: #E32200;
+  color: #e32200;
   padding-left: 6px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.15px;
+}
+
+@media (max-width: 450px) {
+  .containerError img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .error {
+    font-size: 14px;
+  }
 }

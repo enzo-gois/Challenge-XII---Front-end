@@ -6,23 +6,24 @@
 .formDiv {
   display: flex;
   margin: 0px 30px;
-  width: auto;
+  gap: 20px;
 }
 
 .formDivNames {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .labelCountry {
   font-size: 12px;
-  color: #FFF;
+  color: #fff;
   position: relative;
-  top: 0.5rem;
+  top: 1.25rem;
   line-height: 16px;
   margin: 0 0 0 7px;
   padding: 0 3px;
-  background: #2C2C2C;
+  background: #2c2c2c;
   width: fit-content;
   height: fit-content;
   letter-spacing: 0.15px;
@@ -34,26 +35,18 @@
   margin: 0px 30px;
 }
 
-.inputFNome {
-  margin-right: 12px;
-}
-
-.inputLNome {
-  margin-left: 12px;
-}
-
 .input,
 .inputCountry,
 .inputFNome,
 .inputLNome {
-  color: #FFF;
+  color: #fff;
   height: 57px;
   width: auto;
   margin-top: 12px;
   margin-bottom: 12px;
   padding: 16.5px;
   background: transparent;
-  border:  1px solid #FFF;
+  border: 1px solid #fff;
   border-radius: 4px;
   width: 100%;
   font-size: 16px;
@@ -66,7 +59,6 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.15px;
-  font-family: Roboto;
   color: #666666;
   opacity: 87%;
 }
@@ -78,11 +70,15 @@
 }
 
 .label {
-  color: #FFF;
+  color: #fff;
   line-height: 26px;
 }
 
-.container{
+.divFinalForm {
+  margin-left: 30px;
+}
+
+.container {
   width: 55px;
   height: 20px;
   background-color: transparent;
@@ -91,7 +87,7 @@
   justify-content: center;
 }
 
-.button{
+.button {
   background-color: #d2d2d2;
   width: 35px;
   height: 15px;
@@ -101,9 +97,9 @@
   transition: 0.2s;
 }
 
-.button::before{
+.button::before {
   position: absolute;
-  content: '';
+  content: "";
   background-color: #fff;
   width: 20px;
   height: 20px;
@@ -111,12 +107,13 @@
   margin: -2px;
   transition: 0.2s;
 }
-input:checked + .button{
-  background-color: #fab433;
+
+input:checked + .button {
+  background-color: rgba(251, 164, 3, 20%);
 }
 
-input:checked + .button::before{
-  background-color: #e0970f;
+input:checked + .button::before {
+  background-color: #fba403;
   transform: translateX(18px);
 }
 
@@ -125,7 +122,7 @@ input:checked + .button::before{
 }
 
 .carType {
-  color: #FBA403;
+  color: #fba403;
   font-size: 20px;
   line-height: 26px;
   margin: 24px 0px 16px 0px;
@@ -133,17 +130,17 @@ input:checked + .button::before{
 
 .SelectCarTypes {
   display: flex;
+  padding-bottom: 7.5px;
 }
 
-.SelectCarTypes button{
+.SelectCarTypes button {
   height: 80px;
   width: 146.5px;
-  font-family: Roboto;
   background: transparent;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   border-radius: 4px;
   margin-right: 12px;
-  color: #FFF;
+  color: #fff;
 }
 
 .submit {
@@ -152,7 +149,7 @@ input:checked + .button::before{
   align-items: center;
   padding: 20px;
   margin: 24px 0px 24.75px 0px;
-  background-color: #FBA403;
+  background-color: #fba403;
   border: none;
   border-radius: 4px;
   color: white;
@@ -164,22 +161,83 @@ input:checked + .button::before{
 
 .select {
   color: #666666;
-  font-size: 16px;
   line-height: 24px;
   height: 57px;
   width: auto;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin: 12px 0;
   padding: 16.5px;
-  background: transparent var(--arrow-icon) no-repeat right 0.8em center / 1.4em ;
-  border:  1px solid #FFF;
+  background: transparent var(--arrow-icon) no-repeat right 0.8em center / 1.4em;
+  border: 1px solid #fff;
   border-radius: 4px;
   width: 100%;
+  font-size: 16px;
   cursor: pointer;
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-.option {
-  font-family: 'Roboto';
+@media (max-width: 450px) {
+  .form {
+    margin-top: 20px;
+  }
+
+  .formDiv,
+  .formDiv1 {
+    margin: 0px 20px;
+  }
+
+  .input,
+  .inputCountry,
+  .inputFNome,
+  .inputLNome {
+    font-size: 13px;
+    height: 40px;
+    margin: 8px 0;
+  }
+
+  .input::placeholder,
+  .inputFNome::placeholder,
+  .inputLNome::placeholder,
+  .inputCountry::placeholder {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .select {
+    padding: 0 16.5px;
+    font-size: 13px;
+    height: 40px;
+    margin: 8px 0;
+  }
+
+  .select option {
+    font-size: 13px;
+  }
+
+  .labelCountry {
+    font-size: 11px;
+    top: 1.05rem;
+  }
+
+  .divFinalForm {
+    margin: 20px;
+  }
+
+  .SelectCarTypes {
+    gap: 15px;
+  }
+
+  .SelectCarTypes button {
+    margin-right: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .checkBox {
+    margin-right: 0;
+  }
 }

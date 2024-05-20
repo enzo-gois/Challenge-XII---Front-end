@@ -18,7 +18,7 @@
 
 .socials {
   display: flex;
-  gap: 0px 22px;
+  gap: 22px;
 }
 
 .rightFooter {
@@ -49,5 +49,46 @@
 
 .moreLinks a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
+}
+
+@media (max-width: 450px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    height: auto;
+    margin: 50px 0;
+  }
+
+  .initialFooter {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .moreLinks {
+    width: auto;
+  }
+
+  .moreLinks p {
+    font-size: 15px;
+  }
+
+  .moreLinks li {
+    font-size: 11px;
+    padding-top: 8px;
+  }
+
+  .rightFooter {
+    padding: 10px 0;
+    margin-top: 20px;
+    gap: 60px;
+  }
+
+  .socials {
+    gap: 45px;
+  }
 }

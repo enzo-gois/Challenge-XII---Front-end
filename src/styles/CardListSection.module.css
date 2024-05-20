@@ -5,14 +5,14 @@
 }
 
 .h1 {
-  color: #FBA403;
+  color: #fba403;
   font-size: 26px;
   letter-spacing: -0.25px;
   font-weight: normal;
 }
 
 .h2 {
-  color: #FFF;
+  color: #fff;
   font-size: 45px;
   line-height: 52px;
   letter-spacing: -0.25px;
@@ -21,5 +21,24 @@
 
 .cards {
   display: flex;
-  flex-direction: row-reverse;
+}
+
+@media (max-width: 450px) {
+  .section {
+    margin-top: 50px;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .h1 {
+    font-size: 18px;
+  }
+
+  .h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
 }

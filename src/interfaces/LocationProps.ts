@@ -3,4 +3,4 @@ interface LocationComponentProps {
   onError: (error: string) => void;
 }
 
-export default LocationComponentProps
+export default LocationComponentProps;

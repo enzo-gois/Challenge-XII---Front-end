@@ -1,8 +1,13 @@
-import React from 'react'
-import CardItemProps from '@/interfaces/CardItemProps'
-import styles from '../components/CardItem.module.css'
+import React from "react";
+import CardItemProps from "@/interfaces/CardItemProps";
+import styles from "../components/CardItem.module.css";
 
-const CardItem: React.FC<CardItemProps> = ({imagem_url, clase, descricao, link}) => {
+const CardItem: React.FC<CardItemProps> = ({
+  imagem_url,
+  clase,
+  descricao,
+  link,
+}) => {
   return (
     <div className={styles.container}>
       <img className={styles.image} src={imagem_url} alt="" />
@@ -11,10 +16,12 @@ const CardItem: React.FC<CardItemProps> = ({imagem_url, clase, descricao, link})
         <span className={styles.description}>{descricao}</span>
       </div>
       <div className={styles.containerLink}>
-        <a className={styles.link} href={link}>LEARN MORE</a>
+        <a className={styles.link} href={link}>
+          LEARN MORE
+        </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CardItem
+export default CardItem;

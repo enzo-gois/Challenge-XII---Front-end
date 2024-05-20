@@ -3,6 +3,7 @@ interface CarButtonProps {
   iconWidth: number;
   iconClass: string;
   onClick: () => void;
+  isSelected: boolean;
 }
 
-export default CarButtonProps
+export default CarButtonProps;

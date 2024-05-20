@@ -9,4 +9,4 @@ interface FormDataProps {
   carType: string;
 }
 
-export default FormDataProps
+export default FormDataProps;

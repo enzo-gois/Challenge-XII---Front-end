@@ -13,7 +13,7 @@
 }
 
 .name {
-  color: #FFF;
+  color: #fff;
   line-height: 24px;
   font-weight: 500;
 }
@@ -31,9 +31,30 @@
 }
 
 .link {
-  color: #FBA403;
+  color: #fba403;
   text-decoration: none;
   font-size: 14px;
   line-height: 16px;
   padding: 10px 12px;
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 40vw;
+    height: auto;
+  }
+
+  .containerLink {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
 }

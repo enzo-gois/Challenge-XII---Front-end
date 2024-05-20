@@ -1,10 +1,16 @@
 .form {
   display: flex;
   flex-direction: column;
-  background-color: #2C2C2C;
+  background-color: #2c2c2c;
   padding: 30px 33px;
   border-radius: 4px;
   margin-top: 30px;
+}
+
+.divForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
 }
 
 .formP {
@@ -15,46 +21,43 @@
 
 .text {
   font-size: 12px;
-  color: #FFF;
+  color: #fff;
   position: relative;
   top: 0.4rem;
   line-height: 12px;
-  margin: 0 0 0 7px;
+  margin: 0 0 0 10px;
   padding: 0 3px;
-  background: #2C2C2C;
+  background: #2c2c2c;
   width: fit-content;
   height: fit-content;
   letter-spacing: 0.15px;
 }
 
 .input {
-  color: #FFF;
+  color: #fff;
   padding: 17px 12px;
   letter-spacing: 0.15px;
   line-height: 24px;
   font-size: 16px;
-  border: 1px #AEAEAE solid;
+  border: 1px rgba(255, 255, 255, 23%) solid;
   border-radius: 4px;
-  background: url("https://challengexiienzogois.s3.us-east-2.amazonaws.com/Icon+Button.svg") no-repeat right / 3em 2em;
-}
-
-.text span {
-  opacity: 70%;
+  background: transparent;
+  width: 100%;
 }
 
 .input::placeholder {
-  color: #FFF;
+  color: #fff;
 }
 
 .input:focus {
-  color: #FBA403;
-  border-color: #FBA403;
+  color: #fba403;
+  border-color: #fba403;
   outline: none;
 }
 
 .input:focus::placeholder {
-  color: #FBA403;
-  border-color: #FBA403;
+  color: #fba403;
+  border-color: #fba403;
 }
 
 .find {
@@ -69,8 +72,8 @@
   justify-content: center;
   align-items: center;
   padding: 16px;
-  margin-top: 16px;
-  background-color: #FBA403;
+  margin-top: 8px;
+  background-color: #fba403;
   border: none;
   border-radius: 4px;
   color: white;
@@ -79,11 +82,99 @@
   width: 215px;
 }
 
+.find button:hover {
+  background-color: #ea9801;
+}
+
 .find p {
-  color: #FBA403;
+  color: #fba403;
   font-size: 14px;
 }
 
 .myRIDE {
-  color: #FBA403;
+  color: #fba403;
+}
+
+.textSpan {
+  opacity: 70%;
+}
+
+.focusedSpan {
+  color: #fba403;
+}
+
+.divInput {
+  display: flex;
+  width: 100%;
+}
+
+.svg1 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 145px;
+  top: 455px;
+}
+
+.svg2 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 145px;
+  top: 528px;
+}
+
+@media (max-width: 450px) {
+  .form {
+    background-color: rgba(35, 35, 35, 95%);
+    margin-top: 30px;
+    padding: 20px 21.5px;
+  }
+
+  .formP {
+    font-size: 18px;
+  }
+
+  .text {
+    font-size: 10px;
+    background-color: rgba(35, 35, 35, 95%);
+  }
+
+  .divInput {
+    width: 100%;
+  }
+
+  .input {
+    font-size: 12px;
+    padding: 12px 10px;
+  }
+
+  .input::placeholder {
+    font-size: 12px;
+  }
+
+  .find button {
+    font-size: 12px;
+    width: 40vw;
+    padding: 8px;
+  }
+
+  .find p {
+    font-size: 10px;
+    margin-right: 5px;
+  }
+
+  .svg1 {
+    top: 323px;
+    right: 45px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .svg2 {
+    top: 385px;
+    right: 45px;
+    width: 20px;
+    height: 20px;
+  }
 }

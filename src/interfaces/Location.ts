@@ -3,4 +3,4 @@ interface Location {
   longitude: number | null;
 }
 
-export default Location
+export default Location;

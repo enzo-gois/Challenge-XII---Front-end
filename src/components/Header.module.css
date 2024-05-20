@@ -5,9 +5,10 @@
   padding: 20px;
   font-size: 16px;
   color: white;
+  width: 100vw;
 }
 
-.navheader{
+.navheader {
   display: flex;
   width: 430px;
   justify-content: space-between;
@@ -26,11 +27,66 @@
   height: 36px;
 }
 
+.iconBell {
+  width: 24px;
+  height: 26.67px;
+}
+
+.iconUser {
+  width: 36px;
+  height: 36px;
+}
+
 .bellheader p {
   color: #333333;
   font-size: 2rem;
 }
 
 .selected {
-  color: #FBA403;
+  color: #fba403;
+}
+
+@media (max-width: 450px) {
+  .header {
+    padding: 15px;
+  }
+
+  .logoheader img {
+    height: 33px;
+  }
+
+  .navheader {
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    gap: 18px;
+  }
+
+  .navheader p {
+    width: 40px;
+    font-size: 11px;
+    flex-wrap: wrap;
+  }
+
+  .selected {
+    color: #fff;
+  }
+
+  .selectedP {
+    color: #fba403;
+  }
+
+  .bellheader {
+    gap: 5px;
+  }
+
+  .iconBell {
+    width: 18px;
+    height: 22px;
+  }
+
+  .iconUser {
+    width: 26px;
+    height: 26px;
+  }
 }
