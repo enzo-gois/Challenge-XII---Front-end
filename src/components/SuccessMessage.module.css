@@ -1,0 +1,40 @@
+.success {
+  background-color: #2c2c2c;
+  margin: 85px 58px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 533px;
+}
+
+.image {
+  width: 175px;
+  height: 175px;
+  margin-bottom: 46px;
+}
+
+.text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 52px;
+  letter-spacing: -0.25px;
+}
+
+@media (max-width: 450px) {
+  .success {
+    height: 50vh;
+    margin: 0 10px;
+  }
+
+  .image {
+    width: 100px;
+    margin-bottom: 0px;
+  }
+
+  .text {
+    font-size: 30px;
+  }
+}

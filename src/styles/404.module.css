@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #282828;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 150px;
+  text-align: center;
+}
+
+.homeLink {
+  margin-top: 30px;
+  color: #fba403;
+}
+
+@media (max-width: 450px) {
+  .text {
+    display: flex;
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  .homeLink {
+    font-size: 18px;
+  }
+}

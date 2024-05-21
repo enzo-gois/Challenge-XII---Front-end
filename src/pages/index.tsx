@@ -1,16 +1,16 @@
-import Head from "next/head";
-import Image from "next/image";
 import Header from "@/components/Header";
-import BookingSection from "@/components/BookingSection";
+import BookingSection from "@/pages/BookingSection";
 import Footer from "@/components/Footer";
-import FormDrive from "@/components/FormDrive";
+import DriveWithSection from "@/pages/DriveWithSection";
+import CardListSection from "./CardListSection";
 
 export default function Home() {
   return (
     <main>
       <Header />
       <BookingSection />
-      <FormDrive />
+      <CardListSection />
+      <DriveWithSection />
       <Footer />
     </main>
   );

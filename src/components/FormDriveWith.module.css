@@ -1,0 +1,243 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formDiv {
+  display: flex;
+  margin: 0px 30px;
+  gap: 20px;
+}
+
+.formDivNames {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.labelCountry {
+  font-size: 12px;
+  color: #fff;
+  position: relative;
+  top: 1.25rem;
+  line-height: 16px;
+  margin: 0 0 0 7px;
+  padding: 0 3px;
+  background: #2c2c2c;
+  width: fit-content;
+  height: fit-content;
+  letter-spacing: 0.15px;
+}
+
+.formDiv1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+.input,
+.inputCountry,
+.inputFNome,
+.inputLNome {
+  color: #fff;
+  height: 57px;
+  width: auto;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 16.5px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.input::placeholder,
+.inputFNome::placeholder,
+.inputLNome::placeholder,
+.inputCountry::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #666666;
+  opacity: 87%;
+}
+
+.checkBox {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.label {
+  color: #fff;
+  line-height: 26px;
+}
+
+.divFinalForm {
+  margin-left: 30px;
+}
+
+.container {
+  width: 55px;
+  height: 20px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  background-color: #d2d2d2;
+  width: 35px;
+  height: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+
+.button::before {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: -2px;
+  transition: 0.2s;
+}
+
+input:checked + .button {
+  background-color: rgba(251, 164, 3, 20%);
+}
+
+input:checked + .button::before {
+  background-color: #fba403;
+  transform: translateX(18px);
+}
+
+.container input {
+  display: none;
+}
+
+.carType {
+  color: #fba403;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 24px 0px 16px 0px;
+}
+
+.SelectCarTypes {
+  display: flex;
+  padding-bottom: 7.5px;
+}
+
+.SelectCarTypes button {
+  height: 80px;
+  width: 146.5px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-right: 12px;
+  color: #fff;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 24px 0px 24.75px 0px;
+  background-color: #fba403;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  letter-spacing: 1.25px;
+  cursor: pointer;
+  width: 200px;
+  font-size: 14px;
+}
+
+.select {
+  color: #666666;
+  line-height: 24px;
+  height: 57px;
+  width: auto;
+  margin: 12px 0;
+  padding: 16.5px;
+  background: transparent var(--arrow-icon) no-repeat right 0.8em center / 1.4em;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+@media (max-width: 450px) {
+  .form {
+    margin-top: 20px;
+  }
+
+  .formDiv,
+  .formDiv1 {
+    margin: 0px 20px;
+  }
+
+  .input,
+  .inputCountry,
+  .inputFNome,
+  .inputLNome {
+    font-size: 13px;
+    height: 40px;
+    margin: 8px 0;
+  }
+
+  .input::placeholder,
+  .inputFNome::placeholder,
+  .inputLNome::placeholder,
+  .inputCountry::placeholder {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .select {
+    padding: 0 16.5px;
+    font-size: 13px;
+    height: 40px;
+    margin: 8px 0;
+  }
+
+  .select option {
+    font-size: 13px;
+  }
+
+  .labelCountry {
+    font-size: 11px;
+    top: 1.05rem;
+  }
+
+  .divFinalForm {
+    margin: 20px;
+  }
+
+  .SelectCarTypes {
+    gap: 15px;
+  }
+
+  .SelectCarTypes button {
+    margin-right: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .checkBox {
+    margin-right: 0;
+  }
+}

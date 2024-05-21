@@ -1,15 +1,32 @@
-import React from 'react'
-import styles from './CarButton.module.css'
-import { Icon } from '@iconify/react/dist/iconify.js'
-import CarButtonProps from '../interfaces/CarButtonProps'
+import React from "react";
+import styles from "./CarButton.module.css";
+import { Icon } from "@iconify/react/dist/iconify.js";
+import CarButtonProps from "../interfaces/CarButtonProps";
 
-const CarButton: React.FC<CarButtonProps> = ({iconName, iconWidth, iconClass}) => {
+const CarButton: React.FC<CarButtonProps> = ({
+  iconName,
+  iconWidth,
+  iconClass,
+  onClick,
+  isSelected,
+}) => {
   return (
-    <button className={styles.buttonCar}>
-      <Icon icon={iconName} style={{color: '#FBA403',height: 40, width: iconWidth}} />
+    <button
+      type="button"
+      className={`${styles.buttonCar} ${isSelected ? styles.selected : ""}`}
+      onClick={onClick}
+    >
+      <Icon
+        icon={iconName}
+        style={{
+          color: isSelected ? "#FBA403" : "#FFF",
+          height: 40,
+          width: iconWidth,
+        }}
+      />
       <span>{iconClass}</span>
-    </button >
-  )
-}
+    </button>
+  );
+};
 
-export default CarButton
+export default CarButton;

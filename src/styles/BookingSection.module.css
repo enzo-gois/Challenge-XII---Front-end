@@ -1,0 +1,64 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  padding: 74px 89px;
+  color: white;
+}
+
+.boxForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.h1 {
+  font-size: 50px;
+}
+
+.h2 {
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+}
+
+.span {
+  color: #fba403;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 610px;
+}
+
+.heroImage img {
+  width: 610px;
+  height: 593px;
+  border-radius: 10px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 450px) {
+  .section {
+    padding: 10px;
+    margin: 80px 0px;
+    background: url("https://challengexiienzogois.s3.us-east-2.amazonaws.com/Hero+image.png");
+    background-size: 100%;
+  }
+
+  .heroImage img {
+    display: none;
+  }
+
+  .h1 {
+    font-size: 35px;
+  }
+
+  .h2 {
+    font-size: 20px;
+  }
+}

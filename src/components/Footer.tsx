@@ -1,49 +1,110 @@
-import React from 'react'
-import styles from './Footer.module.css'
-import { SocialIcon } from 'react-social-icons'
+import React from "react";
+import styles from "./Footer.module.css";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer id="contactUs" className={styles.footer}>
       <div className={styles.initialFooter}>
-        <img src="https://challengexiienzogois.s3.us-east-2.amazonaws.com/Logo.svg" alt="" />
+        <img
+          src="https://challengexiienzogois.s3.us-east-2.amazonaws.com/Logo.svg"
+          alt=""
+        />
         <p>MyRide Inc., 2nd Floor, New York, NY 10016</p>
         <div className={styles.socials}>
-          <SocialIcon url="www.facebook.com" bgColor='white' fgColor='transparent' style={{width: 36.57, height: 36.57 }} />
-          <SocialIcon url="www.instagram.com" bgColor='white' fgColor='transparent' style={{width: 36.57, height: 36.57 }} />
-          <SocialIcon url="www.twitter.com" bgColor='white' fgColor='transparent' style={{width: 36.57, height: 36.57 }} />
+          <a
+            href="https://www.facebook.com/compass.uol/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook
+              style={{ color: "#FFF", width: 36.57, height: 36.57 }}
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/compass.uol/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram
+              style={{ color: "#FFF", width: 36.57, height: 36.57 }}
+            />
+          </a>
+          <a
+            href="https://twitter.com/compassuol"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTwitter style={{ color: "#FFF", width: 36.57, height: 36.57 }} />
+          </a>
         </div>
       </div>
       <div className={styles.rightFooter}>
         <div className={styles.moreLinks}>
           <p>Company</p>
           <ul>
-            <li>About Us</li>
-            <li>News</li>
-            <li>Careers</li>
-            <li>How we work</li>
+            <li>
+              {" "}
+              <Link href="/not-found">About Us</Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link href="/not-found">News</Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link href="/not-found">Careers</Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link href="/not-found">How we work</Link>{" "}
+            </li>
           </ul>
         </div>
         <div className={styles.moreLinks}>
           <p>Support</p>
           <ul>
-            <li>FAQ</li>
-            <li>US Ofiice</li>
-            <li>Asia Office</li>
-            <li>Help Center</li>
+            <li>
+              {" "}
+              <Link href="/not-found">FAQ</Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link href="/not-found">US Ofiice</Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link href="/not-found">Asia Office</Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link href="/not-found">Help Center</Link>{" "}
+            </li>
           </ul>
         </div>
         <div className={styles.moreLinks}>
           <p>More</p>
           <ul>
-            <li>Become a partner</li>
-            <li>Partner Support</li>
-            <li>Mobile app links</li>
+            <li>
+              {" "}
+              <Link href="/not-found">Become a partner</Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link href="/not-found">Partner Support</Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link href="/not-found">Mobile app links</Link>{" "}
+            </li>
           </ul>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
