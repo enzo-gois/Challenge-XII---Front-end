@@ -1,7 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
 Como Rodar:
 
 ```bash
@@ -19,7 +15,7 @@ Configuração de ambiente:
 
 ```bash
 
-crie um arquivo .env na raíz do projeto
+#crie um arquivo .env na raíz do projeto
 e coloque o seguinte conteudo
 
 IPGEOLOCATION_API_KEY = chave da sua api do site =>    https://www.ipify.org
@@ -34,3 +30,10 @@ npm run dev
 ```
 
 Acesse a página  ->   http://localhost:3000
+
+AVISO!!
+A api de localização atual do usuário não 
+vai estar funcionando após baixar o projeto
+
+para que funcione, abra o arquivo next.config.mjs
+e comente a linha:         output: "export"
