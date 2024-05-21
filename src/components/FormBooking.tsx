@@ -58,7 +58,7 @@ const FormBooking = () => {
       }
     } else {
       setError(false);
-      window.location.href = "http://localhost:3000/not-found";
+      window.location.href = "/not-found";
     }
   };
 
