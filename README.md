@@ -30,10 +30,3 @@ npm run dev
 ```
 
 Acesse a página  ->   http://localhost:3000
-
-AVISO!!
-A api de localização atual do usuário não 
-vai estar funcionando após baixar o projeto
-
-para que funcione, abra o arquivo next.config.mjs
-e comente a linha:         output: "export"
