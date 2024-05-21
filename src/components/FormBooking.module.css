@@ -111,17 +111,17 @@
 .svg1 {
   width: 24px;
   height: 24px;
-  position: absolute;
-  right: 145px;
-  top: 455px;
+  position: relative;
+  right: 45px;
+  top: 20px;
 }
 
 .svg2 {
   width: 24px;
   height: 24px;
-  position: absolute;
-  right: 145px;
-  top: 528px;
+  position: relative;
+  right: 45px;
+  top: 20px;
 }
 
 @media (max-width: 450px) {
@@ -165,15 +165,15 @@
   }
 
   .svg1 {
-    top: 323px;
-    right: 45px;
+    top: 17px;
+    right: 40px;
     width: 20px;
     height: 20px;
   }
 
   .svg2 {
-    top: 385px;
-    right: 45px;
+    top: 17px;
+    right: 40px;
     width: 20px;
     height: 20px;
   }

@@ -133,7 +133,9 @@ const FormDriveWith = ({ onSuccess }: any) => {
             Country
           </option>
           {countries.map((country) => (
-            <option value={country}>{country}</option>
+            <option key={country} value={country}>
+              {country}
+            </option>
           ))}
         </select>
         {errors.selectedCountry && <ErrorMessage message="Select a Country" />}

@@ -24,6 +24,7 @@ const CardListSection = () => {
       <div className={styles.cards}>
         {cards.map((card) => (
           <CardItem
+            key={card.id}
             imagem_url={card.imagem_url}
             clase={card.class}
             descricao={card.descricao}

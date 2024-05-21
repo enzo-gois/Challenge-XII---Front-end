@@ -1,0 +1,13 @@
+services:
+  nginx-react:
+    image: myride_frontend:latest
+    container_name: myride
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    environment:
+      - IPGEOLOCATION_API_KEY=${IPGEOLOCATION_API_KEY}
+    env_file:
+      - .env

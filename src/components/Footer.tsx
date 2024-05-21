@@ -3,6 +3,7 @@ import styles from "./Footer.module.css";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -47,19 +48,19 @@ const Footer = () => {
           <ul>
             <li>
               {" "}
-              <a href="/not-found">About Us</a>{" "}
+              <Link href="/not-found">About Us</Link>{" "}
             </li>
             <li>
               {" "}
-              <a href="/not-found">News</a>{" "}
+              <Link href="/not-found">News</Link>{" "}
             </li>
             <li>
               {" "}
-              <a href="/not-found">Careers</a>{" "}
+              <Link href="/not-found">Careers</Link>{" "}
             </li>
             <li>
               {" "}
-              <a href="/not-found">How we work</a>{" "}
+              <Link href="/not-found">How we work</Link>{" "}
             </li>
           </ul>
         </div>
@@ -68,19 +69,19 @@ const Footer = () => {
           <ul>
             <li>
               {" "}
-              <a href="/not-found">FAQ</a>{" "}
+              <Link href="/not-found">FAQ</Link>{" "}
             </li>
             <li>
               {" "}
-              <a href="/not-found">US Ofiice</a>{" "}
+              <Link href="/not-found">US Ofiice</Link>{" "}
             </li>
             <li>
               {" "}
-              <a href="/not-found">Asia Office</a>{" "}
+              <Link href="/not-found">Asia Office</Link>{" "}
             </li>
             <li>
               {" "}
-              <a href="/not-found">Help Center</a>{" "}
+              <Link href="/not-found">Help Center</Link>{" "}
             </li>
           </ul>
         </div>
@@ -89,15 +90,15 @@ const Footer = () => {
           <ul>
             <li>
               {" "}
-              <a href="/not-found">Become a partner</a>{" "}
+              <Link href="/not-found">Become a partner</Link>{" "}
             </li>
             <li>
               {" "}
-              <a href="/not-found">Partner Support</a>{" "}
+              <Link href="/not-found">Partner Support</Link>{" "}
             </li>
             <li>
               {" "}
-              <a href="/not-found">Mobile app links</a>{" "}
+              <Link href="/not-found">Mobile app links</Link>{" "}
             </li>
           </ul>
         </div>

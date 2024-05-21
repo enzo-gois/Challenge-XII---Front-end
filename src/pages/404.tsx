@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/404.module.css";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import Link from "next/link";
 
 const Custom404: React.FC = () => {
   return (
@@ -11,9 +12,9 @@ const Custom404: React.FC = () => {
         style={{ width: 200, height: 200, color: "#FBA403" }}
       />
       <h1 className={styles.text}>404 - Página não encontrada</h1>
-      <a className={styles.homeLink} href="/">
+      <Link className={styles.homeLink} href="/">
         Voltar para a página inicial
-      </a>
+      </Link>
     </div>
   );
 };

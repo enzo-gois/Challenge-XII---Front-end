@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "../styles/DriveWithSection.module.css";
 import FormDriveWith from "@/components/FormDriveWith";
 import SuccessMessage from "@/components/SuccessMessage";
+import Image from "next/image";
 
 const DriveWithSection = () => {
   const [formSubtitetd, setFormSubtitted] = useState(false);
