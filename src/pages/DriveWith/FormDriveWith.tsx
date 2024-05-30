@@ -7,8 +7,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import FormDataProps from "@/interfaces/FormDataProps";
 
 import CarButton from "./CarButton";
-import styles from "./FormDriveWith.module.css";
-import ErrorMessage from "./ErrorMessage";
+import styles from "../../styles/StylesDriveWith/FormDriveWith.module.css";
+import ErrorMessage from "../../components/ErrorMessage";
 
 const schema = z.object({
   firstName: z.string().min(3),
@@ -60,7 +60,6 @@ const FormDriveWith = ({ onSuccess }: any) => {
   };
 
   const handleSubmitForm = async (data: FormDataProps) => {
-    console.log("handleSubmitForm called with data:", data);
     const dataProps = {
       first_name: data.firstName,
       last_name: data.lastName,
@@ -82,7 +81,6 @@ const FormDriveWith = ({ onSuccess }: any) => {
       });
 
       if (response.ok) {
-        console.log("Formulário enviado com sucesso!");
         onSuccess();
       } else {
         console.error("Erro ao enviar o formulário");

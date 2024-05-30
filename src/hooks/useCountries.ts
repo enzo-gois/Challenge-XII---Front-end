@@ -14,7 +14,6 @@ export const useCountries = () => {
       })
       .then((data) => setCountries(data))
       .catch((error) => {
-        console.error("Fetch error:", error);
         setError(error);
       });
   }, []);
