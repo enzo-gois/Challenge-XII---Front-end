@@ -1,6 +1,6 @@
 import React from "react";
 import CardItemProps from "@/interfaces/CardItemProps";
-import styles from "../components/CardItem.module.css";
+import styles from "../../styles/StylesCardList/CardItem.module.css";
 
 const CardItem: React.FC<CardItemProps> = ({
   imagem_url,

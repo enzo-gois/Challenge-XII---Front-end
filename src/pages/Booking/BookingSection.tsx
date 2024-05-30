@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../styles/BookingSection.module.css";
-import FormBooking from "@/components/FormBooking";
+import styles from "../../styles/StylesBooking/BookingSection.module.css";
+import FormBooking from "./FormBooking";
 
 const BookingSection = () => {
   return (

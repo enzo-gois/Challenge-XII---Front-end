@@ -1,9 +1,9 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Card from "../interfaces/Card";
-import styles from "../styles/CardListSection.module.css";
-import CardItem from "@/components/CardItem";
+import Card from "../../interfaces/Card";
+import styles from "../../styles/StylesCardList/CardListSection.module.css";
+import CardItem from "./CardItem";
 
 const CardListSection = () => {
   const [cards, setCards] = useState<Card[]>([]);

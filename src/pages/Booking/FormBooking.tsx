@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
-import ErrorMessage from "../components/ErrorMessage";
-import styles from "./FormBooking.module.css";
+import ErrorMessage from "../../components/ErrorMessage";
+import styles from "../../styles/StylesBooking/FormBooking.module.css";
 import { IoCloseSharp } from "react-icons/io5";
 
 const FormBooking = () => {

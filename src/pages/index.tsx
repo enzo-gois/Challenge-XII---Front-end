@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
-import BookingSection from "@/pages/BookingSection";
+import BookingSection from "./Booking/BookingSection";
 import Footer from "@/components/Footer";
-import DriveWithSection from "@/pages/DriveWithSection";
-import CardListSection from "./CardListSection";
+import DriveWithSection from "./DriveWith/DriveWithSection";
+import CardListSection from "./CardList/CardListSection";
 
 export default function Home() {
   return (
